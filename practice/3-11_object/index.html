@@ -31,8 +31,17 @@
 'use strict';
 
 let jsbook = {title: 'javascript入門', price: 2500, stock: 3};
-console.log(jsbook);
+
+for(let p in jsbook) {
+  console.log(p + '=' + jsbook[p]);
+}
+
+/*console.log(jsbook);
 console.log(jsbook.title);
+console.log(jsbook['price']);
+jsbook.stock = 10;
+console.log(jsbook.stock);
+*/
 </script>
 </body>
 </html>
