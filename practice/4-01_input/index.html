@@ -34,7 +34,8 @@
 <script>
 "use strict";
 
-document.getElementById('form').onclick = function() {
+document.getElementById('form').onclick = function(event) {
+  event.preventDefault();
   // console.log('クリックされました');
   const search = document.getElementById('form').word.value;
   document.getElementById('output').textContent = `[${search}]の検索中。。。`;
