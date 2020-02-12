@@ -19,6 +19,9 @@
 <div class="container">
 <section>
 
+  <p>円周率は　<span id="pi"></span>　です。</p>
+  <p>普通に切り捨てると　<span id="floor"></span> です。</p>
+
 </section>
 </div><!-- /.container -->
 </main>
@@ -31,6 +34,7 @@
 'use strict';
 
 document.getElementById('pi').textContent = Math.PI;
+document.getElementById('floor').textContent = Math.floor(Math.PI);
 </script>
 </body>
 </html>
